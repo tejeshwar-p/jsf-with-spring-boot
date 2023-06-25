@@ -1,0 +1,6 @@
+server:
+  port: 8085
+
+joinfaces:
+  faces:
+    project-stage: Development
