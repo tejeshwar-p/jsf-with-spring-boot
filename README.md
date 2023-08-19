@@ -1,15 +1,18 @@
-## JSF 4 with Spring boot 3.1.1 example
-### This example was created using joinfaces
+## JSF 4 with Spring boot 3.1.1 example<hr>
+### This example was created using [joinfaces](https://github.com/joinfaces/joinfaces)
 
-Application runs but does not show any page.
-However, if no faces tags are used application runs fine with only html tags.(which is completely useless btw)
+Basic project showing the use of combining Jakarta Server Faces 4 with Springboot 3.1.1. 
 
-I get the below info in logs which I suspect is the main problem for showing up blank page as none of the EL tags 
-are resolved.
+Thanks to the contributors of Joinfaces for making this possible.
+Special thanks to [larsgrefer](https://github.com/larsgrefer) for helping to fix the issues.
 
-```j.e.resource.webcontainer.jsf.lifecycle  : JSF1027: [null] The ELResolvers for Faces were not registered with the Jakarta Server Pages container.```
+To run this project, Simply do ```mvn clean install``` and run the JSFWithSpringBootApplication.java
+<br>Open browser and go to http://localhost:8085.
+<br>You should see a page like this when you click on `Submit` button - 
 
-Did not find any way to fix this. Need some help on it.
+<img src="src/main/resources/static/jsf-with-spring-boot.PNG" alt="page-jsf-with-spring-boot"/>
 
+Feel free to use this as a base for your other projects 😊
 
-Abandoning this project due to time constraints and will take it up later once I find any fix or any better compatibility introduced by Spring and JSF community.
+### License<hr>
+This is Open Source software released under the [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
